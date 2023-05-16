@@ -71,6 +71,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
+        this.getPrice();
         String bill = "Base Price Of The Pizza:"+this.basePrice+"\n";
         if(isCheeseAdded) bill += "Extra Cheese Added:"+this.cheesePrice+"\n";
         if(isToppingAdded) bill += "Extra Toppings Added:"+this.myToppingPrice+"\n";
